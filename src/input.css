@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-whiteColor tracking-wider font-krub;
+  }
+}
+
+@layer components {
+  .btn-gradient {
+    @apply relative px-12 py-4 font-medium text-black overflow-hidden;
+    background: linear-gradient(
+      95deg,
+      #ffb629 -1.19%,
+      #ffda56 57.78%,
+      #ffd7a6 115.08%
+    );
+  }
+
+  .btn-primary {
+    @apply relative px-12 py-4 font-medium text-black overflow-hidden;
+    background: #091242;
+  }
+
+  .btn-gradient::after,
+  .btn-primary::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: -10px;
+    width: 50px;
+    height: 100%;
+    background: white;
+    border-radius: 1000px 0 0 100px;
+  }
+  .btn-primary::after {
+    background: #1f2a69;
+  }
+
+  .btn-gradient span,
+  .btn-primary span {
+    position: relative;
+    z-index: 1;
+  }
+}

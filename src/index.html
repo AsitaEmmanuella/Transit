@@ -1,0 +1,1455 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="m-0 p-0">
+    <section
+      id="logo-section"
+      class="bg-primaryColor fixed top-0 left-0 w-full h-[100px] z-10"
+    >
+      <div
+        class="relative px-8 flex justify-between items-center mt-[30px] lg:mt-[20px] lg:px-[60px]"
+      >
+        <div>
+          <img src="./img/Logo.png" alt="logo-image" class="w-40" />
+        </div>
+
+        <div class="lg:hidden">
+          <i class="fa-solid fa-bars cursor-pointer text-xl" id="hamburger"></i>
+        </div>
+
+        <div class="hidden md:hidden lg:flex lg:gap-x-8">
+          <div class="flex items-center space-x-4">
+            <div
+              class="grid place-items-center rounded-full w-12 h-10 bg-whiteColor"
+            >
+              <img src="./img/alarm.png" alt="alarm-image" class="w-6" />
+            </div>
+            <div>
+              <p class="text-xs">Mon - Sat 9.00 - 18.00</p>
+              <p class="text-xs">Sunday closed</p>
+            </div>
+          </div>
+
+          <div class="flex items-center space-x-4">
+            <div>
+              <img src="./img/email.png" class="w-12" alt="alarm-image" />
+            </div>
+            <div>
+              <p class="text-xs">Email</p>
+              <p class="text-xs">contact@logistics.com</p>
+            </div>
+          </div>
+
+          <div class="flex items-center space-x-4">
+            <div>
+              <img src="./img/call.png" class="w-12" alt="alarm-image" />
+            </div>
+            <div>
+              <p class="text-xs">Call Us</p>
+              <p class="text-xs">(00) 112 365 48</p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="hidden absolute top-0 left-0 w-full py-14 bg-primaryColor border-b border-secondaryYellowColor"
+          id="nav-menu"
+        >
+          <div class="flex flex-col text-center gap-5">
+            <div
+              class="nav__link hover:text-secondaryYellowColor ease-in duration-200 text-whiteColor"
+            >
+              Home
+            </div>
+
+            <div
+              class="nav__link hover:text-secondaryYellowColor ease-in duration-200 text-whiteColor"
+            >
+              About
+            </div>
+
+            <div
+              class="nav__link hover:text-secondaryYellowColor ease-in duration-200 text-whiteColor"
+            >
+              Pages
+            </div>
+
+            <div
+              class="nav__link hover:text-secondaryYellowColor ease-in duration-200 text-whiteColor"
+            >
+              Project
+            </div>
+
+            <div
+              class="nav__link hover:text-secondaryYellowColor ease-in duration-200 text-whiteColor"
+            >
+              Contact
+            </div>
+
+            <div
+              class="absolute top-[0.7rem] right-4 text-2xl cursor-pointer"
+              id="nav-close"
+            >
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main class="w-full">
+      <section
+        class="bg-[url('./img/home.png')] bg-cover bg-center bg-no-repeat h-[995px] w-full"
+      >
+        <header
+          id="header"
+          class="hidden md:hidden lg:flex bg-primaryColor/25 fixed top-[100px] left-0 w-full h-[80px] z-10"
+        >
+          <nav
+            class="lg:px-[60px] relative flex justify-between items-center w-full h-full"
+          >
+            <div class="flex items-center gap-x-10">
+              <div
+                class="hover:text-secondaryYellowColor ease-in duration-200 flex gap-x-4 text-whiteColor"
+              >
+                Home
+                <div class="w-px h-6 bg-whiteColor"></div>
+              </div>
+
+              <div class="flex gap-x-4 text-whiteColor">
+                About
+                <div class="w-px h-6 bg-whiteColor"></div>
+              </div>
+
+              <div class="flex gap-x-4 text-whiteColor">
+                Pages
+                <div class="w-px h-6 bg-whiteColor"></div>
+              </div>
+
+              <div class="flex gap-x-4 text-whiteColor">
+                Project
+                <div class="w-px h-6 bg-whiteColor"></div>
+              </div>
+
+              <div class="flex gap-x-4 text-whiteColor">Contact</div>
+            </div>
+
+            <div class="flex items-center gap-x-6">
+              <div class="">
+                <img src="./img/Instagram.png" class="w-5" alt="instagram" />
+              </div>
+
+              <div>
+                <img src="./img/Facebook.png" class="w-5" alt="facebook" />
+              </div>
+
+              <div>
+                <img src="./img/Twitter.png" class="w-5" alt="twitter" />
+              </div>
+
+              <div>
+                <img src="./img/Linkdin.png" class="w-5" alt="linkedin" />
+              </div>
+
+              <div
+                class="bg-whiteColor text-primaryColor px-8 text-center py-7 w-fit whitespace-nowrap h-[80px] font-semibold"
+              >
+                Request Quote
+              </div>
+            </div>
+          </nav>
+        </header>
+
+        <div class="absolute mx-8 top-[200px] lg:container lg:top-[250px]">
+          <div class="flex">
+            <div class="w-2 h-10 bg-yellowColor"></div>
+            <div
+              class="text-whiteColor bg-addonColor/40 px-2 py-2 text-sm font-medium w-fit"
+            >
+              Logistics & Supply Chain Solutions
+            </div>
+          </div>
+
+          <div class="mt-4">
+            <h1 class="text-3xl lg:text-6xl font-bold leading-tight font-rubik">
+              Your Gateway <br />
+              to any Destination <br />
+              in the World
+            </h1>
+
+            <h6 class="mt-4 text-xs">
+              In augue ligula, feugiat ut nulla consequat. Ut est lacus,
+              molestie in arcu <br />
+              no, iaculis vehicula ipsum. Nunc faucibus, nisl id dapibus
+              finibus, enim <br />
+              diam interdum nulla, sed laoreet risus lectus
+            </h6>
+          </div>
+
+          <div>
+            <button class="btn-gradient mt-6">
+              <span>Explore More</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-whiteColor">
+        <div class="mt-20 px-8 lg:px-[60px] lg:flex lg:gap-x-16">
+          <div class="">
+            <div class="flex">
+              <div class="w-2 h-5 bg-yellowColor"></div>
+              <div
+                class="text-titleColor bg-grayColor px-[4px] py-[1px] text-xs font-medium w-fit"
+              >
+                What We Do
+              </div>
+            </div>
+            <h2
+              class="text-3xl text-titleColor md:text-2xl whitespace-nowrap font-bold leading-tight font-rubik mt-4"
+            >
+              Safe & Reliable <br />
+              Cargo Solutions
+            </h2>
+          </div>
+
+          <div class="mt-12 md:grid md:grid-cols-2 md:gap-20">
+            <div class="flex gap-4 mt-8">
+              <img src="./img/sea-transport.png" alt="sea transport" />
+              <div class="w-[1px] h-28 bg-primaryColor"></div>
+              <div>
+                <h3 class="font-rubik font-medium text-l text-titleColor">
+                  Sea Transport services
+                </h3>
+                <h6
+                  class="text-xs text-paragraphColor font-light leading-normal mt-2"
+                >
+                  Following the quality of our service <br />
+                  thus having gained trust of our <br />
+                  many clients.
+                </h6>
+              </div>
+            </div>
+
+            <div class="flex mt-8 gap-4">
+              <img src="./img/warehousing.png" alt="warehousing" />
+              <div class="w-[1px] h-28 bg-primaryColor"></div>
+              <div>
+                <h3 class="font-rubik font-medium text-l text-titleColor">
+                  Warehousing Services
+                </h3>
+                <h6
+                  class="text-xs text-paragraphColor font-light leading-normal mt-2"
+                >
+                  Following the quality of our service <br />
+                  thus having gained trust of our <br />
+                  many clients.
+                </h6>
+              </div>
+            </div>
+
+            <div class="flex mt-8 gap-4">
+              <img src="./img/air-fright.png" alt="air freight" />
+              <div class="w-[1px] h-28 bg-primaryColor"></div>
+              <div>
+                <h3 class="font-rubik font-medium text-l text-titleColor">
+                  Air Fright Services
+                </h3>
+                <h6
+                  class="text-xs text-paragraphColor font-light leading-normal mt-2"
+                >
+                  Following the quality of our service <br />
+                  thus having gained trust of our <br />
+                  many clients.
+                </h6>
+              </div>
+            </div>
+
+            <div class="flex mt-8 gap-4">
+              <img src="./img/shipping.png" alt="logistics" />
+              <div class="w-[1px] h-28 bg-primaryColor"></div>
+              <div>
+                <h3 class="font-rubik font-medium text-l text-titleColor">
+                  Local Shipping Services
+                </h3>
+                <h6
+                  class="text-xs text-paragraphColor font-light leading-normal mt-2"
+                >
+                  Following the quality of our service <br />
+                  thus having gained trust of our <br />
+                  many clients.
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="bg-[url('./img/photo.png')] bg-cover bg-center bg-no-repeat h-96 w-full mt-12"
+      ></section>
+
+      <section>
+        <div>
+          <div
+            class="bg-whiteColor px-8 lg:mx-12 xl:mx-24 lg:mt-[-100px] lg:py-24 mt-12 2xl:w-[1200px] 2xl:mx-auto"
+          >
+            <div class="lg:flex lg:gap-x-60 2xl:gap-x-20 xl:px-20">
+              <div class="">
+                <div class="flex">
+                  <div class="w-[2px] h-5 bg-yellowColor"></div>
+                  <div
+                    class="text-titleColor bg-grayColor px-[4px] py-[1px] text-xs font-medium w-fit"
+                  >
+                    Why Us
+                  </div>
+                </div>
+                <h2
+                  class="text-xl text-titleColor md:text-2xl whitespace-nowrap font-bold leading-tight font-rubik mt-4"
+                >
+                  We provide full range global <br />
+                  logistics solution
+                </h2>
+
+                <h6
+                  class="text-xs text-light text-paragraphColor leading-normal mt-6"
+                >
+                  Leverage agile frameworks to provide a robust synopsis for
+                  <br />
+                  strategy foster collaborative thinking to further the overall
+                  <br />
+                  value proposition.
+                  <br />
+                  <br />
+                  Organically grow the holistic world view of disruptive <br />
+                  innovation via workplace diversity and empowerment.
+                </h6>
+
+                <img
+                  src="./img/airplane.jpg"
+                  class="w-[400px] h-[340px] mt-8 md:mx-auto md:w-[500px] lg:hidden"
+                  alt="airplane"
+                />
+
+                <div class="lg:flex lg:gap-x-8 2xl:gap-x-32">
+                  <div>
+                    <div class="flex items-center gap-x-2 mt-6">
+                      <img
+                        src="./img/delivery-icon.png"
+                        class="lg:w-[50px]"
+                        alt="delivery"
+                      />
+                      <h2
+                        class="text-l lg:text-sm lg:font-light font-bold font-rubik text-titleColor"
+                      >
+                        Delivery
+                      </h2>
+                    </div>
+                    <div class="flex items-center gap-x-2 mt-6">
+                      <img
+                        src="./img/optimzed.png"
+                        class="lg:w-[50px]"
+                        alt="optimized travel cost"
+                      />
+                      <h2
+                        class="text-l lg:text-sm lg:font-light font-bold font-rubik text-titleColor text-nowrap"
+                      >
+                        Optimized Travel Cost
+                      </h2>
+                    </div>
+                  </div>
+                  <img
+                    src="./img/about-delivery.png"
+                    class="mt-8 w-[300px] mx-auto md:w-[400px] lg:mx-0"
+                    alt="making delivery"
+                  />
+                </div>
+              </div>
+
+              <img
+                src="./img/airplane.jpg"
+                class="hidden lg:block lg:w-[400px] lg:h-[340px]"
+                alt="airplane"
+              />
+            </div>
+
+            <div class="px-8 lg:mx-12 lg:py-24 mt-20 md:mt-28">
+              <div class="w-full bg-secondlineColor h-[1px]"></div>
+              <div class="md:flex">
+                <div class="flex items-center gap-x-3 mt-8 mx-8">
+                  <h1 class="text-primaryColor font-extrabold text-3xl">
+                    1294
+                  </h1>
+                  <div class="px-3 py-3 bg-gradientColor"></div>
+                  <h5 class="text-paragraphColor text-sm font-semibold">
+                    Delivered Packages
+                  </h5>
+                </div>
+                <div class="bg-secondlineColor w-[1px] h-20 mx-auto mt-6"></div>
+                <div class="flex items-center gap-x-3 mt-8 mx-8">
+                  <h1 class="text-primaryColor font-extrabold text-3xl">
+                    3594
+                  </h1>
+                  <div class="px-3 py-3 bg-gradientColor"></div>
+                  <h5 class="text-paragraphColor text-sm font-semibold">
+                    Satisfied Clients
+                  </h5>
+                </div>
+              </div>
+
+              <div class="w-full bg-secondlineColor h-[1px] mt-8"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-16">
+        <h3
+          class="text-primaryColor font-bold text-[18px] md:text-[24px] lg:text-[30px] font-rubik mx-14 md:text-center md:mx-0"
+        >
+          Transporting Across The World
+        </h3>
+        <div
+          class="flex flex-col gap-6 mx-12 mt-8 md:mt-16 md:grid md:grid-cols-2 md:gap-10 md:mx-20 lg:grid-cols-3 xl:grid-cols-5 xl:mx-24"
+        >
+          <div class="relative">
+            <img
+              src="./img/liquid.png"
+              class="md:w-[300px]"
+              alt="Liquid Transportation"
+            />
+
+            <div class="absolute bottom-6 left-6">
+              <h5 class="text-sm font-bold">Liquid Transportation</h5>
+              <h6 class="text-xs font-rubik font-light text-yellowColor mt-2">
+                Premium Tankers
+              </h6>
+            </div>
+          </div>
+
+          <div class="relative">
+            <img
+              src="./img/packaging.png"
+              class="md:w-[300px]"
+              alt="Packaging Solutions"
+            />
+
+            <div class="absolute bottom-6 left-6">
+              <h5 class="text-sm font-bold">Packaging Solutions</h5>
+              <h6 class="text-xs font-rubik font-light text-yellowColor mt-2">
+                Warehouse Management
+              </h6>
+            </div>
+          </div>
+
+          <div class="relative">
+            <img
+              src="./img/logistics.png"
+              class="md:w-[300px]"
+              alt="Contract Logistics"
+            />
+
+            <div class="absolute bottom-6 left-6">
+              <h5 class="text-sm font-bold">Contract Logistics</h5>
+              <h6 class="text-xs font-rubik font-light text-yellowColor mt-2">
+                Road Transportation
+              </h6>
+            </div>
+          </div>
+
+          <div class="relative">
+            <img
+              src="./img/distribution.png"
+              class="md:w-[300px]"
+              alt="Warehouse & Distribution"
+            />
+
+            <div class="absolute bottom-6 left-6">
+              <h5 class="text-sm font-bold">Warehouse & Distribution</h5>
+              <h6 class="text-xs font-rubik font-light text-yellowColor mt-2">
+                Large Warehouse
+              </h6>
+            </div>
+          </div>
+
+          <div class="relative">
+            <img
+              src="./img/ocean.png"
+              class="md:w-[300px]"
+              alt="Specialized Transport"
+            />
+
+            <div class="absolute bottom-6 left-6">
+              <h5 class="text-sm font-bold">Specialized Transport</h5>
+              <h6 class="text-xs font-rubik font-light text-yellowColor mt-2">
+                Ocean Transports
+              </h6>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-gradientColor h-[400px] mt-[-70px]">
+        <div class="text-center pt-32">
+          <button class="btn-primary mt-6">
+            <span class="text-whiteColor">More Work</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="px-4 md:px-24 lg:px-32 xl:px-52 2xl:px-72">
+        <div class="mt-16 flex items-center justify-between">
+          <div class="">
+            <div class="flex">
+              <div class="w-[2px] h-5 bg-yellowColor"></div>
+              <div
+                class="text-titleColor bg-grayColor px-[4px] py-[1px] text-xs font-medium w-fit"
+              >
+                Testimonaial
+              </div>
+            </div>
+            <h2
+              class="text-xl text-titleColor md:text-2xl whitespace-nowrap font-bold leading-tight font-rubik mt-4"
+            >
+              What Our Customer Say
+            </h2>
+          </div>
+          <div class="flex align-center gap-x-2 mt-8">
+            <img
+              src="./img/arrow-left.png"
+              class="w-[32px] h-[34px] lg:w-[44px] lg:h-[44px]"
+              alt="left arrow"
+            />
+            <img
+              src="./img/arrow-right.png"
+              class="w-[32px] h-[34px] lg:w-[44px] lg:h-[44px]"
+              alt="right arrow"
+            />
+          </div>
+        </div>
+
+        <div class="lg:flex items-center mt-12">
+          <div class="bg-userColor px-8 py-12">
+            <div class="flex items-center gap-10 lg:justify-between">
+              <div class="flex items-center gap-2">
+                <img src="./img/kathleen.png" alt="Kathleen" />
+                <div>
+                  <h5
+                    class="font-rubik text-sm text-nowrap font-bold text-primaryColor"
+                  >
+                    Kathleen Smith
+                  </h5>
+                  <h6
+                    class="font-normal text-primaryColor text-[10px] text-nowrap mt-1"
+                  >
+                    Fuel Company
+                  </h6>
+                </div>
+              </div>
+              <img
+                src="./img/quote-light.png"
+                alt="light quote"
+                class="w-[30px]"
+              />
+            </div>
+            <p class="text-xs text-paragraphColor leading-5 italic mt-8">
+              Leverage agile frameworks to provide a robust synopsis for
+              strategy foster collaborative thinking to further the overall
+              value proposition. Organically grow the holistic world view of
+              disruptive innovation via workplace diversity and empowerment.
+            </p>
+            <div class="flex items-center gap-2">
+              <img
+                src="./img/star.png"
+                alt="review stars"
+                class="mt-4 w-[20px]"
+              />
+
+              <img
+                src="./img/star.png"
+                alt="review stars"
+                class="mt-4 w-[20px]"
+              />
+
+              <img
+                src="./img/star.png"
+                alt="review stars"
+                class="mt-4 w-[20px]"
+              />
+
+              <img
+                src="./img/star.png"
+                alt="review stars"
+                class="mt-4 w-[20px]"
+              />
+
+              <img
+                src="./img/star.png"
+                alt="review stars"
+                class="mt-4 w-[20px]"
+              />
+            </div>
+          </div>
+          <div class="bg-primaryColor px-8 py-12">
+            <div class="flex items-center gap-10 lg:justify-between">
+              <div class="flex items-center gap-2">
+                <img src="./img/john.png" alt="John Martin" />
+                <div>
+                  <h5
+                    class="font-rubik text-sm text-nowrap font-bold text-whiteColor"
+                  >
+                    John Martin
+                  </h5>
+                  <h6
+                    class="font-normal text-whiteColor text-[10px] text-nowrap mt-1"
+                  >
+                    Restoration Company
+                  </h6>
+                </div>
+              </div>
+              <img
+                src="./img/quote-light.png"
+                alt="light quote"
+                class="w-[30px]"
+              />
+            </div>
+            <p class="text-xs text-whiteColor leading-5 italic mt-8">
+              Leverage agile frameworks to provide a robust synopsis for
+              strategy foster collaborative thinking to further the overall
+              value proposition. Organically grow the holistic world view of
+              disruptive innovation via workplace diversity and empowerment.
+            </p>
+            <div class="flex items-center gap-2">
+              <img
+                src="./img/star.png"
+                alt="review stars"
+                class="mt-4 w-[20px]"
+              />
+
+              <img
+                src="./img/star.png"
+                alt="review stars"
+                class="mt-4 w-[20px]"
+              />
+
+              <img
+                src="./img/star.png"
+                alt="review stars"
+                class="mt-4 w-[20px]"
+              />
+
+              <img
+                src="./img/star.png"
+                alt="review stars"
+                class="mt-4 w-[20px]"
+              />
+
+              <img
+                src="./img/star.png"
+                alt="review stars"
+                class="mt-4 w-[20px]"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-20 bg-userColor">
+        <div class="lg:flex items-center">
+          <div class="bg-primaryColor lg:w-1/2">
+            <div
+              class="relative px-4 py-12 mx-8 lg:mr-[-160px] 2xl:mr-[-380px]"
+            >
+              <img
+                src="./img/airplane-1.png"
+                alt="Airplane"
+                class="my-auto mx-auto w-[300px] md:w-[400px] xl:w-[600px] 2xl:w-[750px]"
+              />
+              <div
+                class="bg-gradientColor flex px-2 md:px-4 py-2 md:py-4 lg:px-4 lg:py-4 xl:py-6 absolute bottom-12 left-[60px] sm:left-[78px] md:left-[265px] lg:left-[205px] xl:left-[260px] 2xl:left-[530px] gap-x-2"
+              >
+                <img
+                  src="./img/moving.png"
+                  alt="moving products"
+                  class="w-[30px] md:w-[36px] lg:w-[40px]"
+                />
+                <h4
+                  class="text-titleColor font-rubik text-xs md:text-sm xl:text-[16px] leading-normal"
+                >
+                  Moving your products <br />
+                  across borders
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-userColor px-8 md:px-24 lg:px-16 xl:px-28 2xl:px-44 lg:w-1/2"
+          >
+            <div class="mt-8">
+              <div class="flex">
+                <div class="w-[2px] h-5 bg-yellowColor"></div>
+                <div
+                  class="text-titleColor bg-grayColor px-[4px] py-[1px] text-xs md:tex-sm font-medium w-fit"
+                >
+                  Why Choose
+                </div>
+              </div>
+              <h2
+                class="text-xl text-titleColor md:text-2xl whitespace-nowrap font-bold leading-tight font-rubik mt-4"
+              >
+                We create opportunity to <br />
+                reach potential
+              </h2>
+              <h6 class="text-paragraphColor text-xs mt-4 leading-6">
+                Leverage agile frameworks to provide a robust synopsis for
+                strategy foster collaborative thinking to further the overall
+                value proposition.
+              </h6>
+              <div class="mt-10 pb-16 sm:grid grid-cols-2 gap-2 lg:gap-x-4">
+                <div class="flex items-center gap-2 mt-4 lg:mt-0">
+                  <img
+                    src="./img/safe.png"
+                    alt="Safe Package"
+                    class="w-[30px]"
+                  />
+                  <h6 class="text-titleColor text-xs font-rubik">
+                    Safe Package
+                  </h6>
+                </div>
+
+                <div class="flex items-center gap-2 mt-4 lg:mt-0">
+                  <img
+                    src="./img/ship.png"
+                    alt="Ship Everywhere"
+                    class="w-[30px]"
+                  />
+                  <h6 class="text-titleColor text-xs font-rubik">
+                    Ship Everywhere
+                  </h6>
+                </div>
+
+                <div class="flex items-center gap-2 mt-4 lg:mt-0">
+                  <img
+                    src="./img/globe-1.png"
+                    alt="Global Tracking"
+                    class="w-[30px]"
+                  />
+                  <h6 class="text-titleColor text-xs font-rubik">
+                    Global Tracking
+                  </h6>
+                </div>
+
+                <div class="flex items-center gap-2 mt-4 lg:mt-0">
+                  <img
+                    src="./img/head.png"
+                    alt="24/7 Support"
+                    class="w-[30px]"
+                  />
+                  <h6 class="text-titleColor text-xs font-rubik">
+                    24/7 Support
+                  </h6>
+                </div>
+
+                <div class="flex items-center gap-2 mt-4 lg:mt-0">
+                  <img
+                    src="./img/timer.png"
+                    alt="In Time Delivery"
+                    class="w-[30px]"
+                  />
+                  <h6 class="text-titleColor text-xs font-rubik">
+                    In Time Delivery
+                  </h6>
+                </div>
+
+                <div class="flex items-center gap-2 mt-4 lg:mt-0">
+                  <img
+                    src="./img/drum-1.png"
+                    alt="Transparent Pricing"
+                    class="w-[30px]"
+                  />
+                  <h6 class="text-titleColor text-xs font-rubik">
+                    Transparent Pricing
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="mt-16">
+          <div class="text-center">
+            <div class="flex justify-center items-center">
+              <div class="w-[2px] h-5 bg-yellowColor"></div>
+              <div
+                class="text-titleColor bg-grayColor px-[4px] py-[1px] text-xs md:tex-sm font-medium w-fit"
+              >
+                The Transporters
+              </div>
+            </div>
+
+            <h2
+              class="text-xl text-titleColor md:text-2xl whitespace-nowrap font-bold leading-tight font-rubik mt-4"
+            >
+              Meet Expert Team
+            </h2>
+          </div>
+
+          <div class="md:flex gap-x-6 xl:gap-x-10 justify-center items-center">
+            <div
+              class="relative flex flex-col items-center justify-center mt-12"
+            >
+              <img
+                src="./img/expert-1.png"
+                alt="Jessca Arow"
+                class="w-[324px] md:w-[200px] lg:w-[270px] xl:w-[300px] 2xl:w-[324px]"
+              />
+              <div
+                class="bg-primaryColor px-6 py-8 w-[324px] md:w-[200px] lg:w-[270px] xl:w-[300px] 2xl:w-[324px]"
+              >
+                <h5 class="font-rubik font-medium">Jessca Arow</h5>
+                <h6 class="text-xs font-light">Designer</h6>
+              </div>
+              <div
+                class="bg-gradientColor absolute bottom-20 right-6 sm:right-11 md:right-0 w-fit flex gap-x-3 px-8 py-4 md:px-4 md:py-2 lg:gap-x-5 lg:py-4 lg:px-6"
+              >
+                <img src="./img/dark-twitter.png" alt="Dark Twitter" />
+                <img src="./img/dark-fb.png" alt="Dark Twitter" />
+                <img src="./img/dark-insta.png" alt="Dark Twitter" />
+              </div>
+            </div>
+
+            <div
+              class="relative flex flex-col items-center justify-center mt-12"
+            >
+              <img
+                src="./img/expert-2.png"
+                alt="Kathleen Smith"
+                class="w-[324px] md:w-[200px] lg:w-[270px] xl:w-[300px] 2xl:w-[324px]"
+              />
+              <div
+                class="bg-primaryColor px-6 py-8 w-[324px] md:w-[200px] lg:w-[270px] xl:w-[300px] 2xl:w-[324px]"
+              >
+                <h5 class="font-rubik font-medium">Kathleen Smith</h5>
+                <h6 class="text-xs font-light">Designer</h6>
+              </div>
+              <div
+                class="bg-gradientColor absolute bottom-20 right-6 sm:right-11 md:right-0 w-fit flex gap-x-3 px-8 py-4 md:px-4 md:py-2 lg:gap-x-5 lg:py-4 lg:px-6"
+              >
+                <img src="./img/dark-linkedin.png" alt="Dark Linkedin" />
+                <img src="./img/dark-twitter.png" alt="Dark Twitter" />
+                <img src="./img/dark-fb.png" alt="Dark Twitter" />
+                <img src="./img/dark-insta.png" alt="Dark Twitter" />
+              </div>
+            </div>
+
+            <div
+              class="relative flex flex-col items-center justify-center mt-12"
+            >
+              <img
+                src="./img/expert-3.png"
+                alt="Rebecca Taylor"
+                class="w-[324px] md:w-[200px] lg:w-[270px] xl:w-[300px] 2xl:w-[324px]"
+              />
+              <div
+                class="bg-primaryColor px-6 py-8 w-[324px] md:w-[200px] lg:w-[270px] xl:w-[300px] 2xl:w-[324px]"
+              >
+                <h5 class="font-rubik font-medium">Rebecca Taylor</h5>
+                <h6 class="text-xs font-light">Designer</h6>
+              </div>
+              <div
+                class="bg-gradientColor absolute bottom-20 right-6 sm:right-11 md:right-0 w-fit flex gap-x-3 px-8 py-4 md:px-4 md:py-2 lg:gap-x-5 lg:py-4 lg:px-6"
+              >
+                <img src="./img/dark-twitter.png" alt="Dark Twitter" />
+                <img src="./img/dark-fb.png" alt="Dark Twitter" />
+                <img src="./img/dark-insta.png" alt="Dark Twitter" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-primaryColor mt-20">
+        <div class="mx-8 md:mx-16 pt-12 lg:mx-24 xl:mx-40 2xl:mx-[430px]">
+          <div class="flex mt-8">
+            <div class="w-[2px] h-5 bg-yellowColor"></div>
+            <div
+              class="text-whiteColor bg-grayColor px-[4px] py-[1px] text-xs md:tex-sm font-medium w-fit"
+            >
+              Contact
+            </div>
+          </div>
+          <div class="md:flex justify-center items-start gap-x-12 2xl:gap-x-24">
+            <div class="">
+              <h2
+                class="text-xl text-whiteColor md:text-2xl whitespace-nowrap font-bold leading-tight font-rubik mt-4"
+              >
+                Get In Touch with us
+              </h2>
+              <h6 class="text-whiteColor text-xs mt-4 leading-6">
+                Leverage agile frameworks to provide a robust <br />
+                synopsis for strategy foster collaborative <br />
+                thinking to further the overall value.
+              </h6>
+
+              <div class="mt-6 flex flex-col gap-6">
+                <div class="flex items-center space-x-4">
+                  <div>
+                    <img
+                      src="./img/alarm-1.png"
+                      alt="alarm-image"
+                      class="w-12"
+                    />
+                  </div>
+                  <div>
+                    <p class="text-xs">Mon - Sat 9.00 - 18.00</p>
+                    <p class="text-xs">Sunday closed</p>
+                  </div>
+                </div>
+
+                <div class="flex items-center space-x-4">
+                  <div>
+                    <img
+                      src="./img/email-1.png"
+                      class="w-12"
+                      alt="mail-image"
+                    />
+                  </div>
+                  <div>
+                    <p class="text-xs">Email</p>
+                    <p class="text-xs">contact@logistics.com</p>
+                  </div>
+                </div>
+
+                <div class="flex items-center space-x-4">
+                  <div>
+                    <img src="./img/call.png" class="w-12" alt="call-image" />
+                  </div>
+                  <div>
+                    <p class="text-xs">Call Us</p>
+                    <p class="text-xs">(00) 112 365 48</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-16 md:mt-0">
+              <div class="lg:grid grid-cols-2 gap-x-6">
+                <input
+                  type="text"
+                  placeholder="Your name*"
+                  class="bg-transparent text-whiteColor placeholder:text-whiteColor border border-inputColor px-6 py-2 w-80 lg:w-60 xl:w-80 mt-6 placeholder:text-xs focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+
+                <input
+                  type="Email"
+                  placeholder="Email*"
+                  class="bg-transparent text-whiteColor placeholder:text-whiteColor border border-inputColor px-6 py-2 w-80 lg:w-60 xl:w-80 mt-6 placeholder:text-xs focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+
+                <input
+                  type="number"
+                  placeholder="Phone Number*"
+                  class="bg-transparent text-whiteColor placeholder:text-whiteColor border border-inputColor px-6 py-2 w-80 lg:w-60 xl:w-80 mt-6 placeholder:text-xs focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+
+                <input
+                  type="text"
+                  placeholder="City*"
+                  class="bg-transparent text-whiteColor placeholder:text-whiteColor border border-inputColor px-6 py-2 w-80 lg:w-60 xl:w-80 mt-6 placeholder:text-xs focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+
+                <textarea
+                  placeholder="Your Message*"
+                  class="bg-transparent text-whiteColor placeholder:text-whiteColor border border-inputColor px-6 py-4 w-80 lg:w-[520px] xl:w-[660px] 2xl:w-[685px] mt-6 h-44 placeholder:text-xs focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none align-top"
+                ></textarea>
+              </div>
+              <button
+                class="bg-gradientColor text-buttonColor hover:bg-gradientColor/90 px-8 py-4 mt-4 text-xs font-medium"
+              >
+                Submit Message
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="mt-12 pb-20 flex flex-col justify-center items-center md:mt-20 md:grid md:grid-cols-2 md:gap-x-0 lg:flex lg:flex-row"
+          >
+            <img
+              src="./img/client-1.png"
+              alt="Studio green"
+              class="md:w-[360px] lg:w-[200px] xl:w-[240px] 2xl:w-[265px]"
+            />
+            <img
+              src="./img/client-2.png"
+              alt="Nord"
+              class="md:w-[360px] lg:w-[200px] xl:w-[240px] 2xl:w-[265px]"
+            />
+            <img
+              src="./img/client-3.png"
+              alt="Points One"
+              class="md:w-[360px] lg:w-[200px] xl:w-[240px] 2xl:w-[265px]"
+            />
+            <img
+              src="./img/client-4.png"
+              alt="Out of the Sandbox"
+              class="md:w-[360px] lg:w-[200px] xl:w-[240px] 2xl:w-[265px]"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-16">
+        <div class="text-center mt-12">
+          <div class="flex justify-center items-center">
+            <div class="w-[2px] h-5 bg-yellowColor"></div>
+            <div
+              class="text-titleColor bg-grayColor px-[4px] py-[1px] text-xs md:tex-sm font-medium w-fit"
+            >
+              Our Blog
+            </div>
+          </div>
+
+          <h2
+            class="text-xl text-titleColor md:text-2xl whitespace-nowrap font-bold leading-tight font-rubik mt-4"
+          >
+            Our Latest News
+          </h2>
+        </div>
+        <div
+          class="mx-auto w-80 md:w-[640px] lg:w-[800px] xl:w-[1000px] 2xl:w-[1050px] bg-secondlineColor h-[1px] mt-8"
+        ></div>
+
+        <div class="mx-8 mt-8 xl:mt-16 lg:mx-24 xl:mx-40">
+          <div
+            class="flex flex-col justify-center items-center md:flex md:flex-row md:justify-center md:items-center md:gap-x-4 lg:gap-x-8 xl:gap-x-16"
+          >
+            <div class="md:flex gap-x-14">
+              <img
+                src="./img/blog-1.png"
+                alt="First blog"
+                class="md:w-[200px] lg:w-[320px] xl:w-[400px] 2xl:w-[480px]"
+              />
+              <div class="flex flex-col justify-center items-center md:block">
+                <div>
+                  <img
+                    src="./img/calendar.png"
+                    alt="Calendar"
+                    class="mt-4 md:mt-0"
+                  />
+                </div>
+                <h3
+                  class="font-bold text-xl font-rubik text-titleColor md:ml-3"
+                >
+                  08
+                </h3>
+                <h6
+                  class="font-xs font-medium text-paragraphColor md:ml-[-20px]"
+                >
+                  September
+                </h6>
+              </div>
+            </div>
+            <div
+              class="mx-8 md:mx-0 flex justify-center items-center bg-secondlineColor h-[1px] mt-4 md:mt-0 md:h-44 lg:h-52 xl:h-64 2xl:h-80 md:w-[1px]"
+            ></div>
+            <div class="md:flex flex-col">
+              <h4
+                class="font-rubik text-titleColor text-sm md:text-base lg:text-lg xl:text-xl font-medium mt-8 md:mt-0"
+              >
+                Inland freight a worthy <br />solution for your business
+              </h4>
+              <h6 class="text-paragraphColor text-xs font-light leading-4 mt-4">
+                We are dedicated in creating added value <br />
+                for our customers by implementing modern <br />technology in our
+                work.
+              </h6>
+              <ul class="list-disc pl-5 mt-4">
+                <li class="text-titleColor text-xs font-medium mt-2">
+                  Urgent transport solutions
+                </li>
+                <li class="text-titleColor text-xs font-medium mt-2">
+                  Reliable & experienced staffs
+                </li>
+                <li class="text-titleColor text-xs font-medium mt-2">
+                  Urgent transport solutions
+                </li>
+                <li class="text-titleColor text-xs font-medium mt-2">
+                  Reliable & experienced staffs
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="w-[350px] md:mx-8 lg:mx-4 2xl:mx-72 md:w-[640px] lg:w-[800px] xl:w-[1000px] 2xl:w-[1050px] bg-secondlineColor h-[1px] mt-8"
+          ></div>
+          <div
+            class="flex flex-col justify-center items-center md:flex md:flex-row md:justify-center md:items-center md:gap-x-4 lg:gap-x-8 xl:gap-x-16 mt-8"
+          >
+            <div class="md:flex gap-x-14">
+              <div class="relative">
+                <img
+                  src="./img/blog-2.png"
+                  alt="First blog"
+                  class="md:w-[200px] lg:w-[320px] xl:w-[400px] 2xl:w-[480px]"
+                />
+                <img
+                  src="./img/overlay.png"
+                  alt="Read More"
+                  class="absolute w-[230px] top-10 left-11 sm:w-[260px] md:w-[150px] md:top-6 md:left-6 lg:w-[260px] lg:top-8 lg:left-7 xl:w-[300px] xl:top-10 xl:left-12 2xl:w-[350px] 2xl:top-14 2xl:left-16"
+                />
+              </div>
+              <div class="flex flex-col justify-center items-center md:block">
+                <div>
+                  <img
+                    src="./img/calendar.png"
+                    alt="Calendar"
+                    class="mt-4 md:mt-0"
+                  />
+                </div>
+                <h3
+                  class="font-bold text-xl font-rubik text-titleColor md:ml-3"
+                >
+                  08
+                </h3>
+                <h6
+                  class="font-xs font-medium text-paragraphColor md:ml-[-20px]"
+                >
+                  September
+                </h6>
+              </div>
+            </div>
+            <div
+              class="mx-8 md:mx-0 flex justify-center items-center bg-secondlineColor h-[1px] mt-4 md:mt-0 md:h-44 lg:h-52 xl:h-64 2xl:h-80 md:w-[1px]"
+            ></div>
+            <div class="md:flex flex-col">
+              <h4
+                class="font-rubik text-titleColor text-sm md:text-base lg:text-lg xl:text-xl font-medium mt-8 md:mt-0"
+              >
+                Inland freight a worthy <br />solution for your business
+              </h4>
+              <h6 class="text-paragraphColor text-xs font-light leading-4 mt-4">
+                We are dedicated in creating added value <br />
+                for our customers by implementing modern <br />technology in our
+                work.
+              </h6>
+              <ul class="list-disc pl-5 mt-4">
+                <li class="text-titleColor text-xs font-medium mt-2">
+                  Urgent transport solutions
+                </li>
+                <li class="text-titleColor text-xs font-medium mt-2">
+                  Reliable & experienced staffs
+                </li>
+                <li class="text-titleColor text-xs font-medium mt-2">
+                  Urgent transport solutions
+                </li>
+                <li class="text-titleColor text-xs font-medium mt-2">
+                  Reliable & experienced staffs
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="mx-auto w-80 md:w-[640px] lg:w-[800px] xl:w-[1000px] 2xl:w-[1050px] bg-secondlineColor h-[1px] mt-8"
+          ></div>
+
+          <div
+            class="flex flex-col justify-center items-center md:flex md:flex-row md:justify-center md:items-center md:gap-x-4 lg:gap-x-8 xl:gap-x-16 mt-8"
+          >
+            <div class="md:flex gap-x-14">
+              <img
+                src="./img/blog-3.png"
+                alt="First blog"
+                class="md:w-[200px] lg:w-[320px] xl:w-[400px] 2xl:w-[480px]"
+              />
+              <div class="flex flex-col justify-center items-center md:block">
+                <div>
+                  <img
+                    src="./img/calendar.png"
+                    alt="Calendar"
+                    class="mt-4 md:mt-0"
+                  />
+                </div>
+                <h3
+                  class="font-bold text-xl font-rubik text-titleColor md:ml-3"
+                >
+                  08
+                </h3>
+                <h6
+                  class="font-xs font-medium text-paragraphColor md:ml-[-20px]"
+                >
+                  September
+                </h6>
+              </div>
+            </div>
+            <div
+              class="mx-8 md:mx-0 flex justify-center items-center bg-secondlineColor h-[1px] mt-4 md:mt-0 md:h-44 lg:h-52 xl:h-64 2xl:h-80 md:w-[1px]"
+            ></div>
+            <div class="md:flex flex-col">
+              <h4
+                class="font-rubik text-titleColor text-sm md:text-base lg:text-lg xl:text-xl font-medium mt-8 md:mt-0"
+              >
+                Inland freight a worthy <br />solution for your business
+              </h4>
+              <h6 class="text-paragraphColor text-xs font-light leading-4 mt-4">
+                We are dedicated in creating added value <br />
+                for our customers by implementing modern <br />technology in our
+                work.
+              </h6>
+              <ul class="list-disc pl-5 mt-4">
+                <li class="text-titleColor text-xs font-medium mt-2">
+                  Urgent transport solutions
+                </li>
+                <li class="text-titleColor text-xs font-medium mt-2">
+                  Reliable & experienced staffs
+                </li>
+                <li class="text-titleColor text-xs font-medium mt-2">
+                  Urgent transport solutions
+                </li>
+                <li class="text-titleColor text-xs font-medium mt-2">
+                  Reliable & experienced staffs
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="mx-auto w-80 md:w-[640px] lg:w-[800px] xl:w-[1000px] 2xl:w-[1050px] bg-secondlineColor h-[1px] mt-8"
+          ></div>
+        </div>
+
+        <div class="text-center pt-6 pb-32">
+          <button class="btn-primary mt-6">
+            <span class="text-whiteColor">More Blog</span>
+          </button>
+        </div>
+      </section>
+
+      <section
+        class="bg-[url('./img/cargo.png')] bg-cover bg-center bg-no-repeat h-[412px] w-full"
+      ></section>
+
+      <section class="bg-primaryColor/80 w-full h-[110px]">
+        <div
+          class="mx-8 lg:mx-12 xl:mx-24 2xl:mx-80 pt-12 lg:pt-0 lg:flex lg:items-center lg:gap-x-8"
+        >
+          <div
+            class="bg-primaryColor px-6 py-6 lg:py-11 lg:px-10 lg:pr-28 xl:pr-48 lg:w-fit"
+          >
+            <img src="./img/Logo.png" alt="TransitFlow" class="w-40" />
+            <div class="pt-8 lg:hidden">
+              <h6 class="text-whiteColor text-xs mt-4 leading-6">
+                Leverage agile frameworks to provide a robust <br />
+                synopsis for strategy foster collaborative <br />
+                thinking to further the overall value.
+              </h6>
+
+              <div class="mt-6 flex flex-col gap-6">
+                <div class="flex items-center space-x-4">
+                  <div>
+                    <img
+                      src="./img/email-1.png"
+                      class="w-12"
+                      alt="mail-image"
+                    />
+                  </div>
+                  <div>
+                    <p class="text-xs">Email</p>
+                    <p class="text-xs">contact@logistics.com</p>
+                  </div>
+                </div>
+
+                <div class="flex items-center space-x-4">
+                  <div>
+                    <img src="./img/call.png" class="w-12" alt="call-image" />
+                  </div>
+                  <div>
+                    <p class="text-xs">Call Us</p>
+                    <p class="text-xs">(00) 112 365 48</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hidden lg:flex lg:gap-x-24 xl:gap-x-24">
+            <div class="text-xl font-rubik font-semibold text-whiteColor">
+              Pages
+            </div>
+            <div class="text-xl font-rubik font-semibold text-whiteColor">
+              Utility
+            </div>
+            <div class="text-xl font-rubik font-semibold text-whiteColor">
+              Subscribe
+            </div>
+          </div>
+        </div>
+
+        <div class="mx-8 pt-12 lg:hidden">
+          <div class="bg-primaryColor px-6 py-6">
+            <h2 class="font-rubik text-xl font-semi-bold">Pages</h2>
+            <div class="pt-8 flex flex-col gap-4">
+              <h6 class="text-xs">About Us</h6>
+              <h6 class="text-xs">Our Team</h6>
+              <h6 class="text-xs">Our Project</h6>
+              <h6 class="text-xs">Pricing</h6>
+              <h6 class="text-xs">Contact</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="mx-8 pt-12 lg:hidden">
+          <div class="bg-primaryColor px-6 py-6">
+            <h2 class="font-rubik text-xl font-semi-bold">Utility</h2>
+            <div class="pt-8 flex flex-col gap-4">
+              <h6 class="text-xs">Style Guide</h6>
+              <h6 class="text-xs">Changelog</h6>
+              <h6 class="text-xs">Licenses</h6>
+              <h6 class="text-xs">Protected</h6>
+              <h6 class="text-xs">Not Found</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="mx-8 pt-12 lg:hidden">
+          <div class="bg-primaryColor px-6 py-6">
+            <h2 class="font-rubik text-xl font-semi-bold">Subscribe</h2>
+            <input
+              type="Email"
+              placeholder="Email here*"
+              class="bg-transparent text-whiteColor placeholder:text-whiteColor border border-inputColor px-6 py-2 w-60 lg:w-60 xl:w-80 mt-6 placeholder:text-xs focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+            <div class="flex gap-x-4 mt-2 mb-8">
+              <button
+                class="bg-gradientColor text-buttonColor hover:bg-gradientColor/90 px-8 py-4 mt-4 text-xs font-medium"
+              >
+                Send Now
+              </button>
+              <div class="flex items-center gap-x-4 mt-4">
+                <img src="./img/Linkdin.png" alt="LinkedIn" />
+                <img src="./img/Twitter.png" alt="LinkedIn" />
+                <img src="./img/Facebook.png" alt="LinkedIn" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-primaryColor mx-0 w-screen sm:w-full lg:hidden">
+          <div class="pt-6">
+            <h6 class="text-[8px] font-light text-center mt-4 pb-8">
+              Copyright © TransitFlow | Designed by VictorFlow - Powered by
+              Webflow
+            </h6>
+          </div>
+        </div>
+      </section>
+
+      <section class="hidden lg:block lg:bg-primaryColor">
+        <div
+          class="lg:px-20 xl:px-36 2xl:px-96 lg:flex lg:gap-x-20 xl:gap-x-32 2xl:gap-x-28 lg:text-nowrap"
+        >
+          <div class="pt-8">
+            <h6 class="text-whiteColor text-xs leading-6">
+              Leverage agile frameworks to provide a <br />
+              robust synopsis for strategy foster <br />
+              collaborative thinking to further the <br />
+              overall value.
+            </h6>
+
+            <div class="mt-6 flex flex-col gap-6">
+              <div class="flex items-center space-x-4">
+                <div>
+                  <img src="./img/email-1.png" class="w-12" alt="mail-image" />
+                </div>
+                <div>
+                  <p class="text-xs">Email</p>
+                  <p class="text-xs">contact@logistics.com</p>
+                </div>
+              </div>
+
+              <div class="flex items-center space-x-4">
+                <div>
+                  <img src="./img/call.png" class="w-12" alt="call-image" />
+                </div>
+                <div>
+                  <p class="text-xs">Call Us</p>
+                  <p class="text-xs">(00) 112 365 48</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex gap-x-[90px]">
+            <div class="pt-8 flex flex-col gap-4">
+              <h6 class="text-xs">About Us</h6>
+              <h6 class="text-xs">Our Team</h6>
+              <h6 class="text-xs">Our Project</h6>
+              <h6 class="text-xs">Pricing</h6>
+              <h6 class="text-xs">Contact</h6>
+            </div>
+
+            <div class="pt-8 flex flex-col gap-4">
+              <h6 class="text-xs">Style Guide</h6>
+              <h6 class="text-xs">Changelog</h6>
+              <h6 class="text-xs">Licenses</h6>
+              <h6 class="text-xs">Protected</h6>
+              <h6 class="text-xs">Not Found</h6>
+            </div>
+
+            <div>
+              <input
+                type="Email"
+                placeholder="Email here*"
+                class="bg-transparent text-whiteColor placeholder:text-whiteColor border border-inputColor px-6 py-2 w-60 lg:w-60 xl:w-80 mt-6 placeholder:text-xs focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+              <div class="flex gap-x-4 mt-2">
+                <button
+                  class="bg-gradientColor text-buttonColor hover:bg-gradientColor/90 px-8 py-4 mt-4 text-xs font-medium"
+                >
+                  Send Now
+                </button>
+                <div class="flex items-center gap-x-4 mt-4">
+                  <img src="./img/Linkdin.png" alt="LinkedIn" />
+                  <img src="./img/Twitter.png" alt="LinkedIn" />
+                  <img src="./img/Facebook.png" alt="LinkedIn" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="bg-inputColor w-full h-[1px] mt-8"></div>
+          <div
+            class="mt-6 pb-8 lg:px-20 xl:px-36 2xl:px-96 flex justify-between"
+          >
+            <h6 class="text-xs font-normal">
+              Copyright © TransitFlow | Designed by VictorFlow - Powered by
+              Webflow.
+            </h6>
+            <div class="flex gap-x-6">
+              <h6 class="text-footerColor text-xs font-light">Style Guide</h6>
+              <h6 class="text-footerColor text-xs font-light">Licenses</h6>
+              <h6 class="text-footerColor text-xs font-light">Changelog</h6>
+              <h6 class="text-footerColor text-xs font-light">Password</h6>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
