@@ -842,20 +842,12 @@ body{
   height: 80px;
 }
 
-.h-full{
-  height: 100%;
-}
-
-.h-screen{
-  height: 100vh;
-}
-
-.h-1\/2{
-  height: 50%;
-}
-
 .h-\[995px\]{
   height: 995px;
+}
+
+.h-full{
+  height: 100%;
 }
 
 .w-12{
